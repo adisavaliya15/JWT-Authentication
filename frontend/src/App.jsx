@@ -10,6 +10,7 @@ import AdminHome from "./pages/admin/AdminHome";
 import AdminServices from "./pages/admin/AdminServices";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./routes/ProtectedRoute";
+import LoggedOutRoute from "./routes/LoggedOutRoute";
 
 function App() {
   return (
@@ -20,8 +21,24 @@ function App() {
           <div className="container mx-auto px-4 py-8">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
+
+              <Route
+                path="/login"
+                element={
+                  <LoggedOutRoute>
+                    <Login />
+                  </LoggedOutRoute>
+                }
+              />
+
+              <Route
+                path="/register"
+                element={
+                  <LoggedOutRoute>
+                    <Register />
+                  </LoggedOutRoute>
+                }
+              />
 
               {/* User Routes */}
               <Route
@@ -58,7 +75,6 @@ function App() {
                   </ProtectedRoute>
                 }
               />
-
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
