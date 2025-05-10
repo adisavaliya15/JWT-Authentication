@@ -1,32 +1,33 @@
-import React from 'react'
+import React from "react";
 
-const Hero = () => {
-    return (
-        <div className="text-black">
-            <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-                <p className="text-[#00df9a] font-bold p-2">
-                    GROWING WITH DATA ANALYTICS
-                </p>
-                <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
-                    Grow with data.
-                </h1>
-                <div className="flex justify-center items-center">
-                    <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
-                        Fast, flexible financing for every bussiness needs.
-                    </p>
-            
-
-                </div>
-                <p className="md:text-2xl text-xl font-bold text-gray-500">
-                    Monitor your bussiness  to increase revenue for BTB, BTC, & SASS
-                    platforms.
-                </p>
-                <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
-                    Get Started
-                </button>
-            </div>
+const HeroSection = () => (
+  <section className="relative bg-white">
+    <div className="pt-20 pb-32">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <h1 className="text-5xl font-bold text-gray-900">
+          Unlock Insights with AnalyticsCo
+        </h1>
+        <p className="mt-4 text-xl text-gray-600">
+          Data-driven decisions made easy. Visualize, analyze, and optimize your
+          business.
+        </p>
+        <div className="mt-8 flex justify-center space-x-4">
+          <a
+            href="#features"
+            className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700"
+          >
+            Get Started
+          </a>
+          <a
+            href="https://www.youtube.com"
+            className="px-6 py-3 border border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50"
+          >
+            Watch Demo
+          </a>
         </div>
-    );
-};
+      </div>
+    </div>
+  </section>
+);
 
-export default Hero;
+export default HeroSection;

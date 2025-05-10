@@ -7,7 +7,7 @@ function Analytics() {
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img className="w-[500px] mx-auto my-4" src={Laptop} alt="/" />
         <div className="flex flex-col justify-center">
-          <p className="text-[#00df9a] font-bold ">DATA ANALYTICS DASHBOARD</p>
+          <p className="text-gray-900 font-bold ">DATA ANALYTICS DASHBOARD</p>
           <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
             Manage Data Analytics Centrally
           </h1>
@@ -17,7 +17,7 @@ function Analytics() {
             dolore autem cum ullam sed odit perspiciatis. Doloribus quos velit,
             eveniet ex deserunt fuga?
           </p>
-          <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
+          <button className="mt-6 inline-block px-6 py-3 bg-primary-600 text-white hover:bg-primary-700 rounded-lg font-medium my-6 mx-auto md:mx-0">
             Get Started
           </button>
         </div>
