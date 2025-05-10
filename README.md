@@ -78,8 +78,8 @@ mern-auth/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/school-blogging-platform.git
-cd school-blogging-platform
+git clone https://github.com/adisavaliya15/JWT-Authentication.git
+cd JWT-Authentication
 ```
 
 ### Install Dependencies
