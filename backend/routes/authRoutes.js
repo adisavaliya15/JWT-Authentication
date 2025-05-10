@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { authenticateUser } = require("../middleware/auth");
-const { login, register } = require("../controllers/authController");
+const { register, login, getMe } = require("../controllers/authController");
 
 // Prevent authenticated users from accessing auth routes
 router.post(
@@ -22,4 +22,5 @@ router.post(
   register
 );
 
+router.get("/me", authenticateUser, getMe);
 module.exports = router;
